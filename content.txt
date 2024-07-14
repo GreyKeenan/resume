@@ -1,0 +1,47 @@
+
+Summary:
+
+Education:
+
+Skills:
+
+	I would consider myself immeditely able-to-work-in C, C#, Python, and JavaScript. / also willing to learn / more detail below
+
+	I have been told I have excellent teamwork and communication skills.
+
+! Achievements:
+
+Experience:
+
+	due to extenuating life circumstances which I can elaborate on if necessary
+
+References:
+
+Familiarity:
+
+	listing notable langs/tools used before, & level of comfort with them measured by what ive used them for
+
+	Languages:
+		
+		C
+		C# with .NET
+		Python
+		JavaScript
+		Go
+		SQL
+			classes, specifically T-SQL
+	
+	.NET Maui
+	.NET Windows Forms
+
+	Linux/bash
+		basic user-level understanding of OS & associated tools
+
+
+Personal Projects:
+	WIP basic 2-d game with C and SDL
+
+	simple minesweeper game with canvas in Javascript
+	simple star trek random episode generator in Javascript
+
+	tiny WASM time printing func
