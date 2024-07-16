@@ -28,7 +28,8 @@ ul {
 	--color-txt: #0f0f0f;
 
 	--color-acc: #3891a6;
-	--color-txt-acc: var(--color-bkg);
+	--color-txt-acc: var(--color-txt);
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,6 +57,10 @@ main * {
 
 
 @media (max-width: 999px) {
+	:root {
+		--line-weight: 3px;
+		--line-style: solid;
+	}
 	
 	main {
 		margin: 2%;
@@ -65,8 +70,8 @@ main * {
 		padding: 1% 2%;
 	}
 	header h1 {
-		border-bottom-width: 2px;
-		border-style: solid;
+		border-bottom-width: var(--line-weight);
+		border-style: var(--line-style);
 
 		padding: 1%;
 		
@@ -83,12 +88,12 @@ main * {
 		padding-left: 0.5%;
 	}
 	.section h2 {
-		border-bottom-width: 2px;
-		border-style: solid;
+		border-bottom-width: var(--line-weight);
+		border-style: var(--line-style);
 	}
 	.section ul:not(#FamiliarLanguages) {
-		border-left-width: 2px;
-		border-style: solid;
+		border-left-width: var(--line-weight);
+		border-style: var(--line-style);
 		
 		padding-left: 1%;
 	}
@@ -108,8 +113,8 @@ main * {
 		text-align: center;
 	}
 	#FamiliarLanguages li:not(:last-child) {
-		border-right-width: 2px;
-		border-style: solid;
+		border-right-width: var(--line-weight);
+		border-style: var(--line-style);
 	}
 
 	footer {
