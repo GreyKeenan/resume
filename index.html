@@ -2,33 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="utf8" />
-	<link rel="stylesheet" href="css/styles.cc">
+	<link rel="stylesheet" href="css/styles.css">
 	<title>Grey Keenan</title>
 </head>
 <body>
 	<header>
 		<h1>S. Grey Keenan</h1>
+		<p>
+			Entry-level software developer nearing graduation with an associate's degree. Looking for a challenging job or internship where I can gain experience, work under and learn from a senior developer, and be part of a team. I'm always eager to grow and improve!
+		</p>
 	</header>
 	<main>
 
-		<div id="Summary">
-			<p>
-				Entry-level software developer nearing graduation with an Associates Degree. Looking for a challenging job or internship where I can gain experience, work under a senior developer's guidance, and be part of a team. Eager to learn more about software development and any specific tools necessary for a given work environment.
-			</p>
-		</div>
-		<div id="Education">
+		<div id="Education" class="section">
 			<h2>Education</h2>
-			<h3>In-Progress: Software Developer AAS - Hennepin Technical College</h3>
-			<p>
-				I have completed 53 of 60 credits at a GPA of 3.95. I will complete the final 7 credits this fall semester (FALL 2024).
-			</p>
+
+			<h3>Software Developer AAS - Hennepin Technical College</h3>
+			<ul>
+				<li>In-Progress: 53/60 credits.</li>
+				<li>GPA: 3.95</li>
+			</ul>
 		</div>
-		<div id="Skills">
+		<div id="Skills" class="section">
 			<h2>Skills</h2>
 
 			<h3>General Skills</h3>
-			<ul id="ul_GeneralSkills">
-				<li>I have been told I am a good communicator, and I work hard to be accomodating to others on a team.</li>
+			<ul>
+				<li>I have been told I am a good communicator. I just do my best to be gracious and accomodating to others.</li>
 				<li>I am comfortable using a linux/bash environment.</li>
 				<li>I am comfortable with the basics of git/github.</li>
 				<li>I genuinely enjoy reading documentation.</li>
@@ -43,17 +43,19 @@
 				<li>SQL</li>
 			</ul>
 			<p>
-				These are the languages I would consider myself familiar-enough with to work in right away. I have also fiddled with Go, Java, and Web Assembly Text, but I would need to brush-up with those languages before working in them confidently. I am perfectly willing to learn any new languages, even in my spare time, if necessary.
+				These are the languages I am most familiar with, though I still have a lot to learn with each of them. I'm always willing to learn more, and I am confident that the problem-solving and organizational skills I have built will carry over to other languages in the future.
 			</p>
+			<!-- old:
+			-->
 
 			<h3>Microsoft and .NET</h3>
 			<p>
-				Though not my personal choice for projects, many of my classes have featured Microsoft tools. As such, I have a basic familarity with tools like C# with .NET, Visual Studio, .NET Maui, Windows Forms, and Microsoft SQL Server.
+				Though not my personal choice for projects, many of my classes have featured Microsoft tools. As such, I have a basic familarity with tools like C# with .NET, Visual Studio, .NET Maui (and Xamarin), Windows Forms, and Microsoft SQL Server.
 			</p>
 		</div>
 
 		<!--
-		<div id="Achievements">
+		<div id="Achievements" class="section">
 			<h2>Achievements</h2>
 			<p>
 				placeholder
@@ -61,7 +63,7 @@
 		</div>
 		-->
 		<!--
-		<div id="Experience">
+		<div id="Experience" class="section">
 			<h2>Experience</h2>
 			<p>
 				placeholder
@@ -69,15 +71,15 @@
 		</div>
 		-->
 
-		<div id="PersonalProjects">
+		<div id="PersonalProjects" class="section">
 			<h2>Personal Projects</h2>
 			<p>
-				These are a few small personal projects/explorations I've messed with. There's nothing crazy here, just a couple of things I found interesting.
+				These are a few small personal projects/explorations I've messed with. There's nothing crazy here, just a couple of things I found interesting and/or have had fun with.
 			</p>
 			
 			<h3>Simple game using C and SDL</h3>
 				<p>
-					I've been making a very simple 2d push-puzzle game using only C and SDL. It's a remake of one of my first projects, which originally used Godot. Currently, I am writing some code to deflate a PNG so I can make a spritesheet and/or just use PNG files instead of Bitmaps. (Without SDL_Image, SDL only supports Bitmaps by default.) Reading through the PNG, zlib, and DEFLATE specifications and learning about Huffman Coding and Lz77 was really interesting. 
+					I've been making a simple, 2d, push-puzzle game using only C and SDL. It's slow going; I've just been plugging along. Right now, I am writing some code to deflate a PNG, since I'm not using SDL_Image. Reading through the PNG, zlib, and DEFLATE specifications, and learning about Huffman Coding and Lz77, has been really interesting. 
 				</p>
 			<!--
 			<h3>Minesweeper in plain JavaScript</h3>
@@ -87,7 +89,7 @@
 			-->
 			<h3>Star Trek random episode generator</h3>
 				<p>
-					Star Trek is one of my favorite shows of all time. I threw together a basic episode randomizer in plain JavaScript and threw it up on Github Pages for my friends and I to use. It's pretty simple, but it's handy because it can remember which episodes have already been generated by re-shuffling the list from a known seed. Also, you can disable certain shows.
+					I really like Star Trek, but sometimes it's hard to pick which episode to watch. So, I threw together a quick episode randomizer in plain JavaScript and put it up on Github Pages for my friends and I. It's pretty simple, but it's handy because it can remember which episodes have already been generated by re-shuffling the list from a known seed. Plus, you can disable individual shows.
 				</p>
 				<p>
 					<a href="https://IronAgate.github.io/random_trek" target="_blank">
@@ -95,9 +97,9 @@
 					</a>
 				</p>
 
-			<h3>Basic time printing program in WAT</h3>
+			<h3>Basic time-printing program in WAT</h3>
 				<p>
-					This is really very simple. It just queries the time, converts it to a string, and prints it out. However, I found it interesting because I had never tried using an assembly-like language before (even if it's just web assembly).
+					This is a really small thing. It just queries the time, converts it to a string, and prints it out. But, I found it interesting because I had never tried using an assembly-like language before (even if it's just web assembly).
 				</p>
 		</div>
 
