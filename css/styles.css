@@ -59,6 +59,9 @@ body, main, main * {
 main * {
 	border-color: var(--color-acc);
 }
+main a {
+	color: var(--color-acc);
+}
 
 @media (max-width: 999px) {
 	.mobile {
@@ -139,48 +142,64 @@ main * {
 		display: none;
 	}
 }
-@media (min-width: 1000px) and (max-width: 3999px) {
+@media (min-width: 1000px) {
 	.desktop {
 		display: default;
 	}
 	:root {
-		--line-weight: 2px;
+		--line-weight: 3px;
 		--line-style: solid;
 
-		--top-start: 10px;
-
 		--sidebar-width: 25%;
-		--main-width: 74%;
+		--main-width: 75%;
+	}
+
+	body {
+		background-color: var(--color-acc);
 	}
 
 	header, footer {
-		position: absolute;
-		left: 0px;
 		width: var(--sidebar-width);
-
-		padding: var(--top-start) 10px;
+		float: left;
 	}
 	header {
-		z-index: 1;
-		top: 0px;
-		height: 100%;
+		float: left;
 
 		padding-top: var(--top-start);
-	}
-	footer {
-		z-index: 2;
-		bottom: 0px;
 	}
 	main {
-		position: absolute;
-		left: var(--sidebar-width);
+		float: right;
 
 		width: var(--main-width);
+		min-height: 100vw;
+	}
+	header, footer, main {
+		padding: 20px 10px;
+	}
 
-		padding-left: 5px;
+	h1, h2 {
+		border-bottom-width: var(--line-weight);
+		border-style: var(--line-style);
+	}
 
-		padding-top: var(--top-start);
-
+	h1 {
+		font-size: 2.75vw;
+	}
+	h2 {
+		font-size: 2vw;
+	}
+	h3 {
+		font-size: 1.5vw;
+	}
+	h2, h3 {
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	p, li {
+		font-size: 1.25vw;
+	}
+	p {
+		padding: 5px;
 	}
 
 	header img {
@@ -191,9 +210,41 @@ main * {
 		object-fit: cover;
 	}
 
-	h1, h2, h3 {
+	.section ul:not(#FamiliarLanguages) {
+		border-left-width: var(--line-weight);
+		border-style: var(--line-style);
+		
+		padding-left: 10px;
+	}
+
+	#FamiliarLanguages {
+
+		width: fit-content;
+		
+		margin: 5px auto;
+
+		border-top-width: var(--line-weight);
 		border-bottom-width: var(--line-weight);
 		border-style: var(--line-style);
+
+		padding: 10px 5vw;
+
+		overflow: hidden;
+	}
+	#FamiliarLanguages li {
+		display: inline;
+
+		padding: 0 1vw;
+
+		text-align: center;
+	}
+	#FamiliarLanguages li:not(:last-child) {
+		border-right-width: var(--line-weight);
+		border-style: var(--line-style);
+	}
+
+	footer ul {
+		text-align: center;
 	}
 
 	.conditional:not(.desktop) {
