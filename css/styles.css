@@ -107,7 +107,7 @@ body::selection, main::selection, main *::selection {
 	background: var(--color-acc);
 }
 
-@media (max-width: 999px) {
+@media (max-width: 899px) {
 	.mobile {
 		display: default;
 	}
@@ -186,12 +186,21 @@ body::selection, main::selection, main *::selection {
 		display: none;
 	}
 }
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
 	.desktop {
 		display: default;
 	}
+	@media (max-width: 2500) {
+		:root {
+			--line-weight: 2px;
+		}
+	}
+	@media (min-width: 2500) {
+		:root {
+			--line-weight: 4px;
+		}
+	}
 	:root {
-		--line-weight: 3px;
 		--line-style: solid;
 
 		--sidebar-width: 25%;
@@ -227,20 +236,20 @@ body::selection, main::selection, main *::selection {
 	}
 
 	h1 {
-		font-size: 2.75vw;
+		font-size: max(100%, 2.75vw);
 	}
 	h2 {
-		font-size: 2vw;
+		font-size: max(100%, 2vw);
 	}
 	h3 {
-		font-size: 1.5vw;
+		font-size: max(100%, 1.5vw);
 	}
 	h2, h3 {
 		margin-top: 10px;
 		margin-bottom: 5px;
 	}
 	p, li {
-		font-size: 1.25vw;
+		font-size: max(100%, 1.25vw);
 	}
 	p {
 		padding: 5px;
