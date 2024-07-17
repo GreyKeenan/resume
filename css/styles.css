@@ -12,6 +12,10 @@
 	--color-acc: #d44d5c;
 	--color-acc: #233c58;
 	--color-acc: #7a151d;
+
+	black & white
+	--color-acc: var(--color-txt);
+	--color-txt-acc: var(--color-bkg);
 */
 
 * {
@@ -34,7 +38,6 @@ ul {
 
 	--color-acc: #3891a6;
 	--color-txt-acc: var(--color-txt);
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,6 +64,22 @@ main * {
 }
 main a {
 	color: var(--color-acc);
+}
+header::-moz-selection, header *::-moz-selection, footer::-moz-selection, footer *::-moz-selection {
+	color: var(--color-acc);
+	background: var(--color-txt);
+}
+header::selection, header *::selection, footer::selection, footer *::selection {
+	color: var(--color-acc);
+	background: var(--color-txt);
+}
+body::-moz-selection, main::-moz-selection, main *::-moz-selection {
+	color: var(--color-bkg);
+	background: var(--color-acc);
+}
+body::selection, main::selection, main *::selection {
+	color: var(--color-bkg);
+	background: var(--color-acc);
 }
 
 @media (max-width: 999px) {
