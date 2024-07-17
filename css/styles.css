@@ -16,6 +16,30 @@
 	black & white
 	--color-acc: var(--color-txt);
 	--color-txt-acc: var(--color-bkg);
+
+	purple
+	--color-acc: #311847;
+	--color-txt-acc: var(--color-bkg);
+
+	lavender
+	--color-acc: #a67f8e;
+
+	pink
+	--color-acc: #ec4067;
+	--color-acc: #ff6978;
+	--color-acc: #db7f8e; I actually quite like this one
+
+	green
+	--color-acc: #78bc61;
+
+	orange
+	--color-acc: #fe5f55;
+
+	teal
+	--color-acc: #36827f;
+
+	royal blue
+	--color-acc: #0e6ba8;
 */
 
 * {
@@ -38,6 +62,7 @@ ul {
 
 	--color-acc: #3891a6;
 	--color-txt-acc: var(--color-txt);
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -190,7 +215,7 @@ body::selection, main::selection, main *::selection {
 		float: right;
 
 		width: var(--main-width);
-		min-height: 100vw;
+		min-height: 100vh;
 	}
 	header, footer, main {
 		padding: 20px 10px;
