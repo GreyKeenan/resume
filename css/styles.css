@@ -17,7 +17,12 @@
 * {
 	margin: 0;
 	padding: 0;
+
 	border: 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-ox-sizing: border-box;
+	box-sizing: border-box;
 }
 ul {
 	list-style-type: none;
@@ -55,51 +60,60 @@ main * {
 	border-color: var(--color-acc);
 }
 
-
 @media (max-width: 999px) {
+	.mobile {
+		display: default;
+	}
 	:root {
 		--line-weight: 3px;
 		--line-style: solid;
 	}
-	
-	main {
-		margin: 2%;
-	}
 
 	header, footer {
-		padding: 1% 2%;
+		padding: 20px;
 	}
 	header h1 {
+		margin-bottom: 20px;
+
 		border-bottom-width: var(--line-weight);
 		border-style: var(--line-style);
 
-		padding: 1%;
+		padding-left: 10px;
 		
 		font-size: 10vw;
 	}
 	header p {
 		margin: 1% 5%;
 	}
-
-	.section h2, .section h3, .section h4 {
-		margin-top: 1.5%;
-		margin-bottom: 1%;
-		
-		padding-left: 0.5%;
+	
+	main {
+		margin: 20px;
 	}
-	.section h2 {
+
+	h2, h3 {
+
+		padding-left: 5px;
+	}
+	h2 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+
 		border-bottom-width: var(--line-weight);
 		border-style: var(--line-style);
+	}
+	h3 {
+		margin-top: 15px;
+		margin-bottom: 10px;
 	}
 	.section ul:not(#FamiliarLanguages) {
 		border-left-width: var(--line-weight);
 		border-style: var(--line-style);
 		
-		padding-left: 1%;
+		padding-left: 10px;
 	}
 
 	#FamiliarLanguages {
-		margin-bottom: 1%;
+		margin-bottom: 10px;
 
 		border-left-width: 0;
 		
@@ -108,7 +122,7 @@ main * {
 	#FamiliarLanguages li {
 		display: inline;
 
-		padding: 0.5% 3%;
+		padding: 5px 3%;
 
 		text-align: center;
 	}
@@ -120,6 +134,69 @@ main * {
 	footer {
 		text-align: center;
 	}
+
+	.conditional:not(.mobile) {
+		display: none;
+	}
 }
 @media (min-width: 1000px) and (max-width: 3999px) {
+	.desktop {
+		display: default;
+	}
+	:root {
+		--line-weight: 2px;
+		--line-style: solid;
+
+		--top-start: 10px;
+
+		--sidebar-width: 25%;
+		--main-width: 74%;
+	}
+
+	header, footer {
+		position: absolute;
+		left: 0px;
+		width: var(--sidebar-width);
+
+		padding: var(--top-start) 10px;
+	}
+	header {
+		z-index: 1;
+		top: 0px;
+		height: 100%;
+
+		padding-top: var(--top-start);
+	}
+	footer {
+		z-index: 2;
+		bottom: 0px;
+	}
+	main {
+		position: absolute;
+		left: var(--sidebar-width);
+
+		width: var(--main-width);
+
+		padding-left: 5px;
+
+		padding-top: var(--top-start);
+
+	}
+
+	header img {
+		width: 80%;
+		margin-left: 10%;
+
+		aspect-ratio: 1/1;
+		object-fit: cover;
+	}
+
+	h1, h2, h3 {
+		border-bottom-width: var(--line-weight);
+		border-style: var(--line-style);
+	}
+
+	.conditional:not(.desktop) {
+		display: none;
+	}
 }

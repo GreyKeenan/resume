@@ -46,3 +46,8 @@ Personal Projects:
 	simple star trek random episode generator in Javascript
 
 	tiny WASM time printing func
+
+TODO:
+	links for personal projects
+	proper desktop resolution scaling
+	prettying-up with better or more colorful css
