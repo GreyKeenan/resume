@@ -244,7 +244,7 @@ body::selection, main::selection, main *::selection {
 	h3 {
 		font-size: max(100%, 1.5vw);
 	}
-	h2, h3 {
+	h1, h2, h3 {
 		margin-top: 10px;
 		margin-bottom: 5px;
 	}
@@ -261,6 +261,8 @@ body::selection, main::selection, main *::selection {
 
 		aspect-ratio: 1/1;
 		object-fit: cover;
+
+		/* border-radius: 100%; */
 	}
 
 	.section ul:not(#FamiliarLanguages) {
