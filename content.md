@@ -43,13 +43,13 @@ These are the languages that I've explored using, some more than others. I am co
 > C# is powerful, but large and complex. I've mainly used it for my coursework, rather than on my own time.
 
 - Go
-> I've only recently started learning go. It seems like a streamlined balance between low-level control and high-level niceties.
+> I've only recently started learning Go. It seems like a streamlined balance between low-level control and high-level niceties.
 
 - Python
 > I haven't used Python very much since learning other languages. The ease-of-use is impressive, but I haven't taken the time look under the hood and learn about Python at a lower level.
 
 - JavaScript
-> Similarly, I've barely used javascript. I have a grasp of the syntax and accessing the DOM. I have not used any frameworks.
+> Similarly, I've barely used JavaScript. I have a grasp of the syntax and accessing the DOM. I have not used any frameworks.
 
 - SQL/T-SQL
 > The black sheep of this list. I have a basic understanding of SQL and database-organization principles.
