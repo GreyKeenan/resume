@@ -54,6 +54,7 @@
 }
 ul {
 	list-style-type: none;
+	list-style-position: inside;
 }
 
 :root {
@@ -63,6 +64,8 @@ ul {
 	--color-acc: #3891a6;
 	--color-txt-acc: var(--color-txt);
 
+	--line-style: solid;
+	--line-weight: max(0.15vw, 2px);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,7 +75,7 @@ p, li {
 	font-family: "Arial", "Verdana", sans-serif;
 }
 
-header, header *, footer, footer * {
+body, header, header *, footer, footer * {
 	background-color: var(--color-acc);
 	color: var(--color-txt-acc);
 }
@@ -80,7 +83,7 @@ header *, footer * {
 	border-color: var(--color-txt-acc);
 }
 
-body, main, main * {
+main, main * {
 	background-color: var(--color-bkg);
 	color: var(--color-txt);
 }
@@ -98,89 +101,96 @@ header::selection, header *::selection, footer::selection, footer *::selection {
 	color: var(--color-acc);
 	background: var(--color-txt);
 }
-body::-moz-selection, main::-moz-selection, main *::-moz-selection {
+main::-moz-selection, main *::-moz-selection {
 	color: var(--color-bkg);
 	background: var(--color-acc);
 }
-body::selection, main::selection, main *::selection {
+main::selection, main *::selection {
 	color: var(--color-bkg);
 	background: var(--color-acc);
 }
+
+
+main p, main ul {
+	margin-top: 7px;
+	margin-left: 1vw;
+}
+main ul {
+	padding-left: 1vw;
+
+	list-style-type: disc;
+}
+main li {
+	margin-top: 5px;
+}
+h1, h2, h3 {
+	margin-top: 10px;
+	margin-bottom: 7px;
+}
+h1, h2 {
+	border-bottom-width: var(--line-weight);
+	border-style: var(--line-style);
+}
+
+.lined-list {
+	list-style-type: none;
+
+	border-left-width: var(--line-weight);
+	border-style: var(--line-style);
+}
+.lined-list li {
+	margin-top: 0;
+}
+
+.inline-list {
+	width: fit-content;
+
+	margin: 14px auto;
+
+	border-top-width: var(--line-weight);
+	border-bottom-width: var(--line-weight);
+	border-style: var(--line-style);
+
+	padding: 7px 7vw;
+
+	overflow: hidden;
+}
+.inline-list li {
+	display: inline;
+
+	margin: 7px 0;
+
+	padding: 0 1vw;
+
+	text-align: center;
+}
+.inline-list li:not(:first-child) {
+	border-left-width: var(--line-weight);
+	border-style: var(--line-style);
+}
+footer {
+	text-align: center;
+}
+
+
+
 
 @media (max-width: 899px) {
 	.mobile {
 		display: default;
 	}
+
 	:root {
-		--line-weight: 3px;
-		--line-style: solid;
 	}
 
-	header, footer {
-		padding: 20px;
+	header, footer, main {
+		padding: 10px 1vw;
 	}
-	header h1 {
-		margin-bottom: 20px;
 
-		border-bottom-width: var(--line-weight);
-		border-style: var(--line-style);
-
-		padding-left: 10px;
-		
+	h1 {
 		font-size: 10vw;
 	}
-	header p {
-		margin: 1% 5%;
-	}
-	
-	main {
-		margin: 20px;
-	}
 
-	h2, h3 {
-
-		padding-left: 5px;
-	}
-	h2 {
-		margin-top: 20px;
-		margin-bottom: 20px;
-
-		border-bottom-width: var(--line-weight);
-		border-style: var(--line-style);
-	}
-	h3 {
-		margin-top: 15px;
-		margin-bottom: 10px;
-	}
-	.section ul:not(#FamiliarLanguages) {
-		border-left-width: var(--line-weight);
-		border-style: var(--line-style);
-		
-		padding-left: 10px;
-	}
-
-	#FamiliarLanguages {
-		margin-bottom: 10px;
-
-		border-left-width: 0;
-		
-		overflow: hidden;
-	}
-	#FamiliarLanguages li {
-		display: inline;
-
-		padding: 5px 3%;
-
-		text-align: center;
-	}
-	#FamiliarLanguages li:not(:last-child) {
-		border-right-width: var(--line-weight);
-		border-style: var(--line-style);
-	}
-
-	footer {
-		text-align: center;
-	}
 
 	.conditional:not(.mobile) {
 		display: none;
@@ -194,20 +204,13 @@ body::selection, main::selection, main *::selection {
 	}
 
 
-	:root {
-		--line-style: solid;
-		--line-weight: max(0.15vw, 2px);
 
-		--sidebar-width: 25%;
-		--main-width: 75%;
-	}
-
-	body {
-		background-color: var(--color-acc);
+	header, footer, main {
+		padding: 20px 1vw;
 	}
 
 	header, footer {
-		width: var(--sidebar-width);
+		width: 25%;
 		float: left;
 	}
 	header img {
@@ -216,31 +219,17 @@ body::selection, main::selection, main *::selection {
 
 		aspect-ratio: 1/1;
 		object-fit: cover;
-
-		/* border-radius: 100%; */
-	}
-	footer {
-		text-align: center;
 	}
 
 	main {
 		float: right;
 
-		width: var(--main-width);
+		width: 75%;
 		min-height: 100vh;
 	}
-	header, footer, main {
-		padding: 20px 1vw;
-	}
 
-	h1, h2, h3 {
-		margin-top: 10px;
-		margin-bottom: 7px;
-	}
+
 	h1, h2 {
-		border-bottom-width: var(--line-weight);
-		border-style: var(--line-style);
-
 		font-size: max(100%, 2.75vw);
 	}
 	h3 {
@@ -249,58 +238,6 @@ body::selection, main::selection, main *::selection {
 	p, li {
 		font-size: max(100%, 1.25vw);
 	}
-	main p, main ul {
-		margin-top: 7px;
-		margin-left: 1vw;
-	}
-	main ul {
-		padding-left: 2vw;
-
-		list-style-type: disc;
-	}
-	main li {
-		margin-top: 5px;
-	}
-
-	.lined-list {
-		padding-left: 1vw; /*unsetting main ul*/
-		list-style-type: none;
-
-		border-left-width: var(--line-weight);
-		border-style: var(--line-style);
-	}
-	.lined-list li {
-		margin-top: 0;
-	}
-
-	.inline-list {
-		width: fit-content;
-
-		margin: 14px auto;
-
-		border-top-width: var(--line-weight);
-		border-bottom-width: var(--line-weight);
-		border-style: var(--line-style);
-
-		padding: 7px 7vw;
-
-		overflow: hidden;
-	}
-	.inline-list li {
-		display: inline;
-
-		margin: 7px 0;
-
-		padding: 0 1vw;
-
-		text-align: center;
-	}
-	.inline-list li:not(:last-child) {
-		border-right-width: var(--line-weight);
-		border-style: var(--line-style);
-	}
-
-	
 
 
 	.conditional:not(.desktop) {
