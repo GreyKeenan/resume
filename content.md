@@ -1,7 +1,7 @@
 
 # S. Grey Keenan
 
-Entry-level software developer nearing graduation. Hard-working, motivated, and determined to grow as a developer. Eager to get started with a job or internship where I can gain experience, learn from senior developers, and be part of a team.
+Entry-level software developer nearing graduation. Hard-working and motivated to grow as a developer. Eager to get started with a job or internship where I can gain experience, learn from senior developers, and be part of a team.
 
 - <https://github.com/GreyKeenan>
 - <sgreykeenan@gmail.com>
@@ -22,9 +22,9 @@ Entry-level software developer nearing graduation. Hard-working, motivated, and 
 
 I am comfortable working with others, and I do my best to be a good communicator/team player. Simply being accomodating, straightforward, and forgiving goes a long way.
 
-My need to learn and understand things at a lower-level drives me to be a critical thinker and a problem-solver. At the same time, I do my best to keep this instinct in check for the sake making progress, rather than getting lost in the weeds.
+My need to learn and understand drives me to be a critical thinker and a problem-solver. At the same time, I do my best to keep this instinct in check for the sake of making progress, rather than getting lost in the weeds.
 
-I like to consider myself an open-minded and creative person, at least as much as one can judge that for themselves. I'm not afraid proposing or embracing new ideas and concepts. Trying new things is essential for improvement, and if they do go wrong they become an oppotunity to learn.
+I consider myself an open-minded and creative person, at least as much as one can judge that for themselves. I'm not afraid of proposing or embracing new ideas and concepts. Trying new things is essential for improvement, and even if they go wrong, they become an oppotunity to learn.
 
 
 ## Developer Tools
@@ -38,7 +38,7 @@ I enjoy reading documentation.
 
 ## Languages
 
-These are the languages that I have explored, some more than others. I believe that the problem-solving and organizational skills I have built will transfer to other languages when necessary.
+These are the languages that I have explored, some more than others. I believe that the problem-solving skills and concepts I've learned will transfer to other languages when necessary.
 
 - C
 > C has helped me understand how data and memory are manipulated at a lower level.
@@ -53,7 +53,7 @@ These are the languages that I have explored, some more than others. I believe t
 > I haven't used Python much since learning other languages. It was a great way to get started.
 
 - JavaScript
-> I have a grasp of the syntax and accessing the DOM. I have not used any frameworks.
+> With JavaScript, I have a grasp of the syntax and accessing the DOM, but I have not used any frameworks.
 
 - SQL/T-SQL
 >  I have a basic understanding of SQL and database-organization principles.
