@@ -20,41 +20,41 @@ Entry-level software developer nearing graduation. Hard-working and motivated to
 
 ## Soft Skills
 
-I am comfortable working with others, and I do my best to be a good communicator/team player. Simply being accomodating, straightforward, and forgiving goes a long way.
+I am comfortable working with others. I try to be a good communicator and a team player. Being accomodating, straightforward, and forgiving goes a long way.
 
-My need to learn and understand drives me to be a critical thinker and a problem-solver. At the same time, I do my best to keep this instinct in check for the sake of making progress, rather than getting lost in the weeds.
+My desire to understand things at a fundamental level drives me to be a critical thinker and a problem-solver. At the same time, I do my best to keep this instinct in check for the sake of making progress, rather than getting lost in the weeds.
 
-I consider myself an open-minded and creative person, at least as much as one can judge that for themselves. I'm not afraid of proposing or embracing new ideas and concepts. Trying new things is essential for improvement, and even if they go wrong, they become an oppotunity to learn.
+I consider myself an open-minded and creative person, as much as I can judge that myself. I'm not afraid of embracing or proposing new ideas. 
 
 
 ## Developer Tools
 
 If it's worth mentioning, I am comfortable using git/github and working on the command line in a linux/bash environment.
 
-My classes have heavily featured the Microsoft environment, but I have not pursued these tools in my own time. I have a basic understanding of .NET, MAUI (and Xamarin), Visual Studio, Windows Forms, and Microsoft SQL Server.
+My classes have heavily featured the Microsoft environment, though I have not pursued these tools in my own time. I have a basic understanding of .NET, MAUI (and Xamarin), Visual Studio, Windows Forms, and Microsoft SQL Server.
 
 I enjoy reading documentation.
 
 
 ## Languages
 
-These are the languages that I have explored, some more than others. I believe that the problem-solving skills and concepts I've learned will transfer to other languages when necessary.
+These are the languages that I have explored, some more than others. I believe that the problem-solving skills and programming concepts I've learned will allow me to learn new languages as well.
 
 - C
-> C has helped me understand how data and memory are manipulated at a lower level.
+> C has helped me understand how data and memory are handled at a lower level.
 
 - C#
-> I've used C# a lot for my coursework, but not a ton on my own time.
+> I've used C# for a lot of my coursework, but not on my own time.
 
 - Go
 > I've recently started learning Go. I appreciate the balance between low-level concepts and higher-level features.
 
 - Python
-> I haven't used Python much since learning other languages. It was a great way to get started.
+> Python was my first language. I have not used it extensively since learning other languages.
 
 - JavaScript
-> With JavaScript, I have a grasp of the syntax and accessing the DOM, but I have not used any frameworks.
+> I have a grasp of JavaScript's syntax and accessing the DOM, but I have not used any frameworks.
 
 - SQL/T-SQL
->  I have a basic understanding of SQL and database-organization principles.
+> If this even counts, I have a basic understanding of SQL and database-design principles.
 
